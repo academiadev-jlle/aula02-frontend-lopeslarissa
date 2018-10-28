@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Bolsa de Valores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong id="titulo">Ações</strong>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <form class="form-inline form-acao">
+                <div class="form-group mb-2">
+                    <label for="nome" class="sr-only">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome da Ação">
+                </div>                
+                <div class="form-group mb-2">
+                    <label for="valor" class="sr-only">Valor</label>
+                    <input type="text" class="form-control" id="valor" placeholder="Valor da Ação">
+                </div>
+                <button type="button" class="btn btn-primary mb-2" id="btn-cadastrar">Cadastrar</button>
+            </form>
+
+            <table class="table tabela-acoes">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Dica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="acao">
+                        <td class="info-nome">GOL PN N2</td>
+                        <td class="info-valor">18.21</td>
+                        <td class="info-dica abaixo-cota">Compra</td>
+                    </tr>
+                    <tr class="acao">
+                        <td class="info-nome">CEMIG PN N1</td>
+                        <td class="info-valor">12.05</td>
+                        <td class="info-dica abaixo-cota">Compra</td>
+                    </tr>
+                    <tr class="acao">
+                        <td class="info-nome">ITAUUNIBANCOPN N1</td>
+                        <td class="info-valor">50.00</td>
+                        <td class="info-dica igual-cota">Mantem</td>
+                    </tr>
+                    <tr class="acao">
+                        <td class="info-nome">P.ACUCAR-CBDPN N1</td>
+                        <td class="info-valor">77.98</td>
+                        <td class="info-dica acima-cota">Vende</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

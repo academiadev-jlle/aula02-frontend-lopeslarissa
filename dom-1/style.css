@@ -1,0 +1,9 @@
+.abaixo-cota { color: lightcoral; }
+.acima-cota { color: lightgreen; }
+.igual-cota {color: lightblue; }
+
+.igual-cota, .abaixo-cota, .acima-cota{
+    font-weight: bold;
+}
+
+.form-acao { padding: 15px 0; }
